@@ -1,0 +1,9 @@
+E:\C# programs\CannonShotsPlanes\CannonShotsPlanes\bin\Debug\CannonShotsPlanes.exe.config
+E:\C# programs\CannonShotsPlanes\CannonShotsPlanes\bin\Debug\CannonShotsPlanes.exe
+E:\C# programs\CannonShotsPlanes\CannonShotsPlanes\bin\Debug\CannonShotsPlanes.pdb
+E:\C# programs\CannonShotsPlanes\CannonShotsPlanes\obj\Debug\CannonShotsPlanes.Form1.resources
+E:\C# programs\CannonShotsPlanes\CannonShotsPlanes\obj\Debug\CannonShotsPlanes.Properties.Resources.resources
+E:\C# programs\CannonShotsPlanes\CannonShotsPlanes\obj\Debug\CannonShotsPlanes.csproj.GenerateResource.cache
+E:\C# programs\CannonShotsPlanes\CannonShotsPlanes\obj\Debug\CannonShotsPlanes.exe
+E:\C# programs\CannonShotsPlanes\CannonShotsPlanes\obj\Debug\CannonShotsPlanes.pdb
+E:\C# programs\CannonShotsPlanes\CannonShotsPlanes\obj\Debug\CannonShotsPlanes.csprojAssemblyReference.cache

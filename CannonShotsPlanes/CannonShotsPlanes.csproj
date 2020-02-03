@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3ABD869C-8BF3-4DAD-899C-51693834E2E7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CannonShotsPlanes</RootNamespace>
+    <AssemblyName>CannonShotsPlanes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bullet.cs" />
+    <Compile Include="Cannon.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameElement.cs" />
+    <Compile Include="Plane.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\飞机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cannon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100-直升飞机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantankedaodan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向左.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向右.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向上.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\向下.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\炮管左倾.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\炮管右倾.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\生成飞机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\战斗机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5178694181773e064977943d6832e48d[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\炸弹.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\坦克.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
